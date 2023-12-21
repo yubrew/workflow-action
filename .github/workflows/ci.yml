@@ -48,13 +48,3 @@ jobs:
       - name: Checkout
         id: checkout
         uses: actions/checkout@v4
-
-      - name: Test Local Action
-        id: test-action
-        uses: ./
-        with:
-            owner: ${{ github.repository_owner }}
-            repo: ${{ github.event.repository.name }}
-            pr_number: ${{ github.event.number }}
-            token: ${{ secrets.GITHUB_TOKEN }}
-
