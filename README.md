@@ -155,16 +155,6 @@ steps:
   - name: Checkout
     id: checkout
     uses: actions/checkout@v3
-
-  - name: Test Local Action
-    id: test-action
-    uses: ./
-    with:
-      milliseconds: 1000
-
-  - name: Print Output
-    id: output
-    run: echo "${{ steps.test-action.outputs.time }}"
 ```
 
 For example workflow runs, check out the
