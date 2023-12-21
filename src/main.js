@@ -62,7 +62,6 @@ async function run() {
      * Loop over all the files changed in the PR and add labels according
      * to files types.
      **/
-    console.log(changedFiles)
     for (const file of changedFiles) {
       /**
        * Add labels according to file types.
