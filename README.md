@@ -175,7 +175,7 @@ hash.
 steps:
   - name: Checkout
     id: checkout
-    uses: actions/checkout@v4
+    uses: actions/checkout@v4.1
 ```
 
 ## TODO
