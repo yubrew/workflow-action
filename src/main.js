@@ -76,7 +76,7 @@ async function run() {
             issue_number: pr_number,
             labels: ['markdown']
           })
-          break;
+          break
         case 'js':
           await octokit.rest.issues.addLabels({
             owner,
@@ -84,7 +84,7 @@ async function run() {
             issue_number: pr_number,
             labels: ['javascript']
           })
-          break;
+          break
         case 'yml':
           await octokit.rest.issues.addLabels({
             owner,
@@ -92,7 +92,7 @@ async function run() {
             issue_number: pr_number,
             labels: ['yaml']
           })
-          break;
+          break
         case 'yaml':
           await octokit.rest.issues.addLabels({
             owner,
@@ -100,7 +100,7 @@ async function run() {
             issue_number: pr_number,
             labels: ['yaml']
           })
-          break;
+          break
         case 'rs':
           await octokit.rest.issues.addLabels({
             owner,
@@ -108,7 +108,7 @@ async function run() {
             issue_number: pr_number,
             labels: ['rust']
           })
-          break;
+          break
         case 'sol':
           await octokit.rest.issues.addLabels({
             owner,
