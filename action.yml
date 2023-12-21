@@ -1,19 +1,22 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
-
-# Define your inputs here.
+name: 'Test workflow and releases'
+description: 'Provides PR notes'
+author: 'yubrew'
+branding:
+  icon: 'git-merge'
+  color: 'orange'
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  owner:
+    description: 'The owner of the repository'
     required: true
-    default: '1000'
-
-# Define your outputs here.
-outputs:
-  time:
-    description: 'Your output description here'
-
+  repo:
+    description: 'The name of the repository'
+    required: true
+  pr_number:
+    description: 'The number of the pull request'
+    required: true
+  token:
+    description: 'The token to use to access the GitHub API'
+    required: true
 runs:
-  using: node20
-  main: dist/index.js
+  using: 'node20'
+  main: 'dist/index.js'
